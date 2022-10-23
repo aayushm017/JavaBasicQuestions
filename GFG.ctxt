@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=GFG
+comment0.text=\ Abstraction\r\nabstract\ class\ Bike\ {\r\n\ \ \ \ abstract\ void\ run();\ //\ 100%\ abstraction\ achieved\r\n}\r\n\r\nclass\ Honda4\ extends\ Bike\ {\r\n\ \ \ \ void\ run()\ {\r\n\ \ \ \ \ \ \ \ System.out.println("running\ safely");\r\n\ \ \ \ }\r\n\r\n\ \ \ \ public\ static\ void\ main(String\ args[])\ {\r\n\ \ \ \ \ \ \ \ Bike\ obj\ \=\ new\ Honda4();\r\n\ \ \ \ \ \ \ \ obj.run();\r\n\ \ \ \ }\r\n}\r\n
+comment1.params=num
+comment1.target=void\ convert_to_words(char[])
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=interviewPrep
+comment0.text=\r\nFind\ position\ of\ an\ element\ in\ a\ sorted\ array\ of\ infinite\ numbers??\r\n\r\npublic\ class\ interviewPrep\ {\r\n\ \ \ \ public\ static\ int\ ans(int\ arr[],\ int\ target)\ {\r\n\ \ \ \ \ \ \ \ int\ start\ \=\ 0;\r\n\ \ \ \ \ \ \ \ int\ end\ \=\ 1;\r\n\r\n\ \ \ \ \ \ \ \ while\ (target\ >\ arr[end])\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ temp\ \=\ end\ +\ 1;\r\n\ \ \ \ \ \ \ \ \ \ \ \ end\ \=\ end\ +\ (end\ -\ start\ +\ 1)\ *\ 2;\r\n\ \ \ \ \ \ \ \ \ \ \ \ start\ \=\ temp;\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ return\ binarySearch(arr,\ target,\ start,\ end);\r\n\ \ \ \ }\r\n\r\n\ \ \ \ public\ static\ int\ binarySearch(int\ arr[],\ int\ target,\ int\ start,\ int\ end)\ {\r\n\ \ \ \ \ \ \ \ while\ (start\ <\=\ end)\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ mid\ \=\ start\ +\ (end\ -\ start)\ /\ 2;\r\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (target\ <\ arr[mid])\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ end\ \=\ mid\ -\ 1;\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\ else\ if\ (target\ >\ arr[mid])\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ start\ \=\ mid\ +\ 1;\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\ else\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ mid;\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ return\ -1;\r\n\ \ \ \ }\r\n\r\n\ \ \ \ public\ static\ void\ main(String[]\ args)\ {\r\n\ \ \ \ \ \ \ \ int\ arr[]\ \=\ {\ 3,\ 5,\ 7,\ 9,\ 10,\ 90,\ 100,\ 130,\ 140,\ 160,\ 170\ };\r\n\ \ \ \ \ \ \ \ int\ target\ \=\ 10;\r\n\ \ \ \ \ \ \ \ System.out.println("Target\ Index\=\ "\ +\ ans(arr,\ target));\r\n\ \ \ \ }\r\n}\r\n
+comment1.params=arr
+comment1.target=int\ peakIndexMountainArray(int[])
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3
