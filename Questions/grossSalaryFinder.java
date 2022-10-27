@@ -7,7 +7,7 @@ public class grossSalaryFinder {
         public void accept(){
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter Basic Salary = ");
-            basic_salary = sc.nextInt();
+            basic_salary = sc.nextDouble();
         }
 
         public void calculate(){
