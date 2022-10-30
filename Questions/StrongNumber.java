@@ -20,9 +20,9 @@ public class StrongNumber {
         }
 
         if(original_n == sum){
-            System.out.println(sum + " = is a Strong Number");
+            System.out.println(original_n + " = is a Strong Number");
         }else{
-            System.out.println(sum + " = is not a Strong Number");
+            System.out.println(original_n + " = is not a Strong Number");
         }
     }
 }
