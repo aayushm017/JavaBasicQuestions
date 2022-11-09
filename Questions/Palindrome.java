@@ -11,7 +11,7 @@ public class Palindrome {
 
         while(n != 0){
             rem = n%10;
-            rev = rev*10 + rem;
+            rev = rev*10 + rem; //Wrong wrong
             n = n/10;
         }
 

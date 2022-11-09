@@ -1,8 +1,7 @@
 package Questions;
-
 import java.util.Scanner;
 
-public class BinarySearch {
+public class BinarySearchUnknownIndex {
     public static int binSearch(int arr[], int n) {
         int start = 0;
         int end = arr.length - 1;
@@ -17,7 +16,7 @@ public class BinarySearch {
                 return mid;
             }
         }
-        return -1;
+        return start; //this will return us the unknown number index
     }
 
     public static void main(String args[]) {

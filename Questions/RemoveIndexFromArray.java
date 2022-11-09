@@ -12,7 +12,7 @@ public class RemoveIndexFromArray {
         for(int i = del_index; i < n - 1; i++){
             arr[i] = arr[i+1];
         }
-        n--; // automatically removing the elements from arr.length-1
+        n--; // automatically removing the elements from arr.length - 1 position
 
         for(int i = 0; i < n; i++){
             System.out.print(arr[i] + " ");
