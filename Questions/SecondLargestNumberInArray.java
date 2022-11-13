@@ -6,7 +6,7 @@ public class SecondLargestNumberInArray {
         int temp = 0;
 
         for(int i = 0; i < arr.length; i++){
-            for(int j = i+1; j < arr.length; j++){
+            for(int j = i + 1; j < arr.length - 1; j++){
                 if(arr[i] < arr[j]){              //if 2nd Smallest then arr[i] > arr[j]
                     temp = arr[i];
                     arr[i] = arr[j];
@@ -17,9 +17,11 @@ public class SecondLargestNumberInArray {
                 break;
             }
         }
-        for(int i=0; i < arr.length; i++){
+
+        for(int i = 0; i < arr.length; i++){
             System.out.print(arr[i] + " ");  // Print Sort an Array Asc/Desc.
         }
+        System.out.println(" ");
         System.out.println("Second largest Element in an Array = " + arr[1]);
     }
 }

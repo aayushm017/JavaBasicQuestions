@@ -8,12 +8,13 @@ public class PerfectNumber {
         int n = sc.nextInt();
         int sum = 0;
 
-        int i= 1;
+        int i = 1;
         while (n % i == 0){
             sum = sum + i;
             i++;
         }
         System.out.println("Sum = " + sum);
+
         if (sum == n){
             System.out.println(n + " = is a Perfect Number");
         }else{

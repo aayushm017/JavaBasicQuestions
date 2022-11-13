@@ -8,7 +8,7 @@ public class PrimeNumber {
         int n = sc.nextInt();
         int temp = 0;
 
-        for(int div = 2; div <= n-1; div++){
+        for(int div = 2; div <= n - 1; div++){
             if(n % div == 0){
                 temp = temp + 1;
             }
