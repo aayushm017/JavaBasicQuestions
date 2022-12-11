@@ -1,10 +1,16 @@
 package Questions;
+import java.util.Scanner;
 
 public class practice {
     public static void main(String[] args) {
-        int x = 15;
-        int y = 10;
-        int exp = x*y/x+y;
-        System.out.println(exp);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number = ");
+        int n = sc.nextInt();
+
+        for(int i = 1; i <= n; i++){
+            if(n % i == 0){
+                System.out.print(i + " ");
+            }
+        }
     }
 }
